@@ -18,7 +18,7 @@
           <div class="flex gap-4">
             <img src="assets/Group.png" alt="" />
             <div>
-              <h1 class="text-3xl font-bold">$45000</h1>
+              <h1 class="text-3xl font-bold">$ <span id="main-amount"> 45000</span></h1>
               <p class="text-gray-600">Available Balance</p>
             </div>
           </div>
@@ -86,9 +86,9 @@
                   <label class="label">Select a Bank</label>
                   <select class="select text-gray-500 rounded-3xl">
                     <option disabled selected>select your bank</option>
-                    <option>Crimson</option>
-                    <option>Amber</option>
-                    <option>Velvet</option>
+                    <option value="Bikash">Bikash</option>
+                    <option value="Rocket">Rocket</option>
+                    <option value="Nagad">Nagad</option>
                   </select>
                   <label class="label">Bank Acconut Number</label>
                   <input
@@ -98,6 +98,7 @@
                   />
                   <label class="label">Amount to Add</label>
                   <input
+                    id="added-amount"
                     type="text"
                     class="input rounded-3xl"
                     placeholder="Add Amount to windraw"
@@ -105,11 +106,12 @@
                   <label class="label">Pin Number</label>
                   <input
                     type="password"
+                    id="pin"
                     class="input rounded-3xl"
                     placeholder="Enter 4 digit Pin"
                   />
                   <div><a class="link link-hover">Forgot password?</a></div>
-                  <button class="btn btn-primary mt-4">Add Money</button>
+                  <button id="add-money-btn" class="btn btn-primary mt-4">Add Money</button>
                 </fieldset>
               </div>
             </div>
@@ -117,5 +119,6 @@
         </div>
       </section>
     </section>
+    <script src="js/addmoney.js"></script>
   </body>
 </html>

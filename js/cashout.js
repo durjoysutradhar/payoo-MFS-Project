@@ -1,19 +1,19 @@
-document.getElementById("add-money-btn").addEventListener("click", function(event){
+document.getElementById("cashout-btn").addEventListener("click", function(event){
     event.preventDefault();
     const mainAmount = document.getElementById("main-amount").innerText ;
     const convertedMainAmount = parseFloat(mainAmount);
 
-    const addedAmount = document.getElementById("added-amount").value ;
-    const convertedAddedAmount = parseFloat(addedAmount);
+    const cashoutAmount = document.getElementById("cashout-amount").value ;
+    const convertedCashoutAmount = parseFloat(cashoutAmount);
 
-    const pin = document.getElementById("added-pin").value;
+    const pin = document.getElementById("cashout-pin").value;
     const convertedPin = parseInt(pin);
 
     if(convertedPin === 7462){
-        const newAmount = convertedMainAmount + convertedAddedAmount;
+        const newAmount = convertedMainAmount - convertedCashoutAmount;
         console.log(newAmount);
         document.getElementById("main-amount").innerText = newAmount;
-        alert("Money added successfully!");
+        alert("Money cashed out successfully!");
     }else{
         alert("Invalid Pin. Please try again.");
     }

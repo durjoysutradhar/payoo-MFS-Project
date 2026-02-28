@@ -34,13 +34,13 @@
         </section>
         <section class="grid grid-cols-3 p-4 gap-1">
           <div
-            class="box border border-gray-400 text-center justify-center p-4 rounded-lg shadow-md"
+            id="add-money-box" class="box border border-gray-400 text-center justify-center p-4 rounded-lg shadow-md"
           >
             <img class="w-8 mx-auto" src="assets/wallet1.png" alt="" />
             <h1>Add Money</h1>
           </div>
           <div
-            class="box border border-gray-400 text-center justify-center p-4 rounded-lg shadow-md"
+            id="cashout-box" class="box border border-gray-400 text-center justify-center p-4 rounded-lg shadow-md"
           >
             <img class="mx-auto" src="assets/send1.png" alt="" />
             <h1>CashOut</h1>
@@ -75,7 +75,7 @@
       <!-- Add money section -->
 
       <section>
-        <div class="bg-base-200 min-h-screen">
+        <div id="add-money-id"  class="bg-base-200 min-h-screen">
           <div class="hero-content flex-col lg:flex-row-reverse">
             <div class="text-center lg:text-left">
               <h1 class="text-5xl font-bold">Add Money</h1>
@@ -101,12 +101,12 @@
                     id="added-amount"
                     type="text"
                     class="input rounded-3xl"
-                    placeholder="Add Amount to windraw"
+                    placeholder="Add Amount to deposite"
                   />
                   <label class="label">Pin Number</label>
                   <input
                     type="password"
-                    id="pin"
+                    id="added-pin"
                     class="input rounded-3xl"
                     placeholder="Enter 4 digit Pin"
                   />
@@ -118,7 +118,58 @@
           </div>
         </div>
       </section>
+
+
+      <!-- Cashoout part -->
+      
+      <section>
+        <div id="cashout-id" class="bg-base-200 min-h-screen">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="text-center lg:text-left">
+              <h1 class="text-5xl font-bold">Cash Out</h1>
+            </div>
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label">Select a Bank</label>
+                  <select class="select text-gray-500 rounded-3xl">
+                    <option disabled selected>select your bank</option>
+                    <option value="Bikash">Bikash</option>
+                    <option value="Rocket">Rocket</option>
+                    <option value="Nagad">Nagad</option>
+                  </select>
+                  <label class="label">Bank Acconut Number</label>
+                  <input
+                    type="text"
+                    class="input rounded-3xl"
+                    placeholder="Enter 11 digit account number"
+                  />
+                  <label class="label">Amount to Cash Out</label>
+                  <input
+                    id="cashout-amount"
+                    type="text"
+                    class="input rounded-3xl"
+                    placeholder="Add Amount to windraw"
+                  />
+                  <label class="label">Pin Number</label>
+                  <input
+                    type="password"
+                    id="cashout-pin"
+                    class="input rounded-3xl"
+                    placeholder="Enter 4 digit Pin"
+                  />
+                  <div><a class="link link-hover">Forgot password?</a></div>
+                  <button id="cashout-btn" class="btn btn-primary mt-4">Cash Out</button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </section>
     <script src="js/addmoney.js"></script>
+    <script src="js/toogle.js"></script>
+    <script src="js/cashout.js"></script>
   </body>
 </html>

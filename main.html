@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Main profile</title>
+  </head>
+  <body class="bg-slate-800">
+    <section class="max-w-md min-h-screen mx-auto py-6 bg-gray-200">
+      <header>
+        <nav class="flex justify-between items-center border-b border-gray-300">
+          <div class="flex gap-4">
+            <img src="assets/Group.png" alt="" />
+            <div>
+              <h1 class="text-3xl font-bold">$45000</h1>
+              <p class="text-gray-600">Available Balance</p>
+            </div>
+          </div>
+          <button class="btn btn-default rounded-md shadow">Log Out</button>
+          <hr class="my-4" />
+        </nav>
+        <section>
+          <h1 class="text-2xl font-bold mt-2 pl-4">🔥 Welcome to Payooo!</h1>
+          <p class="text-gray-600 pl-4">
+            Enjoy easy and convenient financial services with us. Cashout charge
+            is low and
+          </p>
+        </section>
+        <section class="grid grid-cols-3 p-4 gap-1">
+          <div
+            class="box border border-gray-400 text-center justify-center p-4 rounded-lg shadow-md"
+          >
+            <img class="w-8 mx-auto" src="assets/wallet1.png" alt="" />
+            <h1>Add Money</h1>
+          </div>
+          <div
+            class="box border border-gray-400 text-center justify-center p-4 rounded-lg shadow-md"
+          >
+            <img class="mx-auto" src="assets/send1.png" alt="" />
+            <h1>CashOut</h1>
+          </div>
+          <div
+            class="box border border-gray-400 text-center justify-center p-4 rounded-lg shadow-md"
+          >
+            <img class="mx-auto" src="assets/money1.png" alt="" />
+            <h1>Transfer Money</h1>
+          </div>
+          <div
+            class="box border border-gray-400 text-center justify-center p-4 rounded-lg shadow-md"
+          >
+            <img class="mx-auto" src="assets/bonus1.png" alt="" />
+            <h1>Get Bonus</h1>
+          </div>
+          <div
+            class="box border border-gray-400 text-center justify-center p-4 rounded-lg shadow-md"
+          >
+            <img class="mx-auto" src="assets/purse1.png" alt="" />
+            <h1>Pay Bill</h1>
+          </div>
+          <div
+            class="box border border-gray-400 text-center justify-center p-4 rounded-lg shadow-md h-26"
+          >
+            <img class="mx-auto" src="assets/transaction1.png" alt="" />
+            <h1>Transaction</h1>
+          </div>
+        </section>
+      </header>
+
+      <!-- Add money section -->
+
+      <section>
+        <div class="bg-base-200 min-h-screen">
+          <div class="hero-content flex-col lg:flex-row-reverse">
+            <div class="text-center lg:text-left">
+              <h1 class="text-5xl font-bold">Add Money</h1>
+            </div>
+            <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+              <div class="card-body">
+                <fieldset class="fieldset">
+                  <label class="label">Select a Bank</label>
+                  <input type="email" class="input rounded-3xl" placeholder="select " />
+                  <label class="label">Bank Acconut Number</label>
+                  <input
+                    type="text"
+                    class="input rounded-3xl"
+                    placeholder="Enter 11 digit account number"
+                  />
+                  <label class="label">Amount to Add</label>
+                  <input type="text" class="input rounded-3xl" placeholder="Add Amount to windraw" />
+                  <label class="label">Pin Number</label>
+                  <input type="password" class="input rounded-3xl" placeholder="Enter 4 digit Pin" />
+                  <div><a class="link link-hover">Forgot password?</a></div>
+                  <button class="btn btn-primary mt-4">Add Money</button>
+                </fieldset>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

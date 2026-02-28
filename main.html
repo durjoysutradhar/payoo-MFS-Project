@@ -84,7 +84,12 @@
               <div class="card-body">
                 <fieldset class="fieldset">
                   <label class="label">Select a Bank</label>
-                  <input type="email" class="input rounded-3xl" placeholder="select " />
+                  <select class="select text-gray-500 rounded-3xl">
+                    <option disabled selected>select your bank</option>
+                    <option>Crimson</option>
+                    <option>Amber</option>
+                    <option>Velvet</option>
+                  </select>
                   <label class="label">Bank Acconut Number</label>
                   <input
                     type="text"
@@ -92,9 +97,17 @@
                     placeholder="Enter 11 digit account number"
                   />
                   <label class="label">Amount to Add</label>
-                  <input type="text" class="input rounded-3xl" placeholder="Add Amount to windraw" />
+                  <input
+                    type="text"
+                    class="input rounded-3xl"
+                    placeholder="Add Amount to windraw"
+                  />
                   <label class="label">Pin Number</label>
-                  <input type="password" class="input rounded-3xl" placeholder="Enter 4 digit Pin" />
+                  <input
+                    type="password"
+                    class="input rounded-3xl"
+                    placeholder="Enter 4 digit Pin"
+                  />
                   <div><a class="link link-hover">Forgot password?</a></div>
                   <button class="btn btn-primary mt-4">Add Money</button>
                 </fieldset>
